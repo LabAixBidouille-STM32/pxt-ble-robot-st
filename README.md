@@ -1,4 +1,4 @@
-# BleRobot blocks for STM32IOTNODE
+# BleRobot blocks for stm32-iot-node
 
 Blocks that support [BLE robot by ST](https://www.st.com)
 
@@ -7,7 +7,7 @@ Blocks that support [BLE robot by ST](https://www.st.com)
 * turn around
 
 ```blocks
-input.onButtonPressed(Button.A, () => {
+input.buttonD4.onEvent(ButtonEvent.Click, function () {
     ble_robot_st.turnRight(90);
 })
 ```
@@ -15,16 +15,16 @@ input.onButtonPressed(Button.A, () => {
 * go forward
 
 ```blocks
-input.onButtonPressed(Button.B, () => {
+input.buttonD3.onEvent(ButtonEvent.Click, function () {
     ble_robot_st.driveForwards(10);
 })
 ```
 
-* stop both motors when pressing ``A+B``
+* stop both motors
 
 ```blocks
-input.onButtonPressed(Button.AB, () => {
-    ble_robot_st.stop();
+input.buttonD2.onEvent(ButtonEvent.Click, function () {
+	    ble_robot_st.stop();
 })
 ```
 
@@ -34,7 +34,7 @@ MIT
 
 ## Supported targets
 
-* for PXT/STM32IOTNODE
+* for PXT/stm32-iot-node
 (The metadata above is needed for package search.)
 
 
