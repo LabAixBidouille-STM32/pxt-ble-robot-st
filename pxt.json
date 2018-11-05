@@ -1,0 +1,17 @@
+{
+    "name": "pxt-ble-robot-st",
+    "version": "0.0.1",
+    "description": "Blocks to simplify using ble-robot-st in PXT",
+    "license": "MIT",
+    "dependencies": {
+        "core": "*"
+    },
+    "files": [
+        "README.md",
+        "ble_robot_st.ts"
+    ],
+    "testFiles": [
+        "tests.ts"
+    ],
+    "public": true
+}
